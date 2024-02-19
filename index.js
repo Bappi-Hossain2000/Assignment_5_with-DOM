@@ -104,6 +104,4 @@ next.addEventListener("click", function(){
   display.appendChild(popup)
   console.log(display);
 
-  // console.log(popup);
-
 })
