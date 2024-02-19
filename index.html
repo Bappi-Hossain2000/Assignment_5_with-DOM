@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <!-- t & dUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- custom t -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- font_manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- font-awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css -->
+  <style>
+    .raleway {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="raleway">
+
+  <header class="container mx-auto px-2">
+    <!-- nav_section -->
+    <nav>
+      <div class="flex justify-between py-[50px] items-center">
+
+        <div class="flex items-center ">
+          <i class="fa-solid fa-bars mr-4 lg:hidden block"></i>
+          <h1 class="text-[24px] font-extrabold">Travel-Ticket</h1>
+        </div>
+
+        <div class="hidden lg:block">
+          <ul class="flex space-x-10 text-lg font-normal">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Destination</a></li>
+            <li><a href="">Search</a></li>
+          </ul>
+        </div>
+
+        <div class="flex items-center">
+          <button class=" text-[#1DD100] lg:text-[24px] font-bold bg-[#e2eedd] p-3 lg:px-6 lg:py-4 rounded-md">Bus <img class="inline px-4" src="img/bus-icon.png" alt=""></button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner_section End-to-End Travel with P Paribahan -->
+    <div class="flex items-center w-full bg-[url('img/banner.png')] bg-no-repeat  h-[600px] grid-cols-1 bg-slate-400 bg-cover">
+      <div class="m-auto">
+        <h1 class="text-[#fff] text-center font-extrabold text-[86px]">End-to-End Travel with</h1>
+      <h3 class="text-[#1DD100] text-center font-extrabold text-[86px]">Travel-Paribahan</h3>
+      <p class="text-[#fff] text-center font-[400px] text-[18px] my-8">Travel-Paribahan" might refer to a company or service that <br> provides transportation services, such as buses, trains, or rental vehicles, in Bangladesh or <br> other Bengali-speaking areas.</p>
+      <a class="block text-center" href="#ph"><button class=" btn bg-[#1DD100] outline-none border-none ">Buy Tickets</button>
+    </a>
+      </div>
+    </div>
+    
+  </header>
+  
+
+  <main class="container mx-auto px-2">
+    <!-- Best offers for you _section_01 -->
+
+      <div class="">
+        <h1 class="text-center text-[40px] font-extrabold py-12 ">Best offers for you</h1>
+        <div class="flex">
+          <div class="bg-[#FFBF0F] flex w-1/2 mr-5 rounded-2xl">
+            <div class="w-7/12 p-14">
+              <h1 class="font-bold text-[30px]">15% OFF</h1>
+              <h5>on your next purchase</h5>
+              <p>use by January 2024</p>
+            </div>
+            <img src="img/cupon-devider.png" alt="">
+            <div class="p-14">
+              <h1 class="font-bold text-[30px]">NEW15</h1>
+              <p>Coupon Code</p>
+            </div>
+
+          </div>
+          <div class="bg-[#F78C9C] flex w-1/2 rounded-2xl">
+            <div class="w-7/12 p-14">
+              <h1 class="font-bold text-[30px]">20% OFF</h1>
+              <h5>on your next purchase</h5>
+              <p>use by January 2024</p>
+            </div>
+            <img src="img/cupon-devider.png" alt="">
+            <div class="p-14">
+              <h1 class="font-bold text-[30px]">Couple 20</h1>
+              <p>Coupon Code</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="text-center"><button class="btn bg-white text-[#1DD100] my-8">See All Offers</button></div>
+      </div>
+
+    <!-- P.H Paribahan _section_02-->
+    <div>
+      <!-- P.H Paribahan _section_02/1-->
+        <h1 id="ph" class="text-center text-[36px] font-extrabold my-4">Travel-Paribahan</h1>
+        <p class="text-center font-medium">It could also be a travel agency specializing in arranging transportation, <br> accommodation, and other travel-related services for customers traveling to or from Bengali-speaking regions</p>
+
+        <div class=" flex rounded-2xl my-10">
+          <div class="w-8/12">
+
+            <div class="flex justify-between">
+              <div class="flex">
+                <img class="p-4" src="img/bus-logo.png" alt="">
+                <div class="p-4">
+                  <h1 class="text-[#030712] font-extrabold text-[32px]">Greenline Paribahan</h1>
+                  <p>Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div class="p-4">
+                <button class="btn bg-green-200 text-[#1DD100]"><img src="img/seat-green.png" alt=""><span id="seatsLeft">40</span> Seats left</button>
+              </div>
+            </div>
+
+           <div class="bg-[#F7F8F8] rounded-2xl">
+            <div class="flex justify-between p-3">
+              <p>Route</p>
+              <p>Dhaka - Sylhet</p>
+            </div>
+            <hr class="border-dashed">
+            <div class="flex justify-between p-3">
+              <p>Departure Time</p>
+              <p>9:00 PM</p>
+            </div>
+            <hr class="border-dashed">
+            <div class="flex justify-between p-3 gap-3">
+              <button class="btn bg-slate-200">Boarding Point - Laxmipur</button>
+              <button class="btn bg-slate-200">Dropping Point - Bogura</button>
+              <button class="btn bg-slate-200">Est. Time - 11 Hour</button>
+            </div>
+           </div>
+          </div>
+
+          <img src="img/info-devider.png" alt="">
+
+          <div class="px-2 mt-20 ">
+            <img src="img/fare.png" alt="">
+            <h1 class="text-[#030712] font-extrabold text-[32px]">550 Taka</h1>
+            <p>Per Seat</p>
+          </div>
+        </div>
+
+        <!-- Select Your Seat & Select Your Seat _section_02/2 -->
+        <div class="flex p-2">
+          <div class="px-4 w-7/12 p-2">
+            <h1 class="text-[#030712] font-bold text-[24px]">Select Your Seat</h1>
+            <hr class="border-dashed my-2">
+            <div class="flex justify-between">
+              <p><img class="inline mr-3" src="img/seat-gray.png" alt="">Available</p>
+              <p class="text-green-600"><img class="inline mr-3" src="img/seat-green-filled.png" alt="">Selected</p>
+            </div>
+            <hr class="border-dashed my-2">
+            <div class="text-end">
+              <button class="btn w-24 h-14"><img src="img/Vector.png" alt=""></button>
+            </div>
+            <!-- ticket -->
+            <div class="flex">
+              <div>
+                <p class="w-24 h-14 text-center mt-5">A</p>
+                <p class="w-24 h-14 text-center mt-5">B</p>
+                <p class="w-24 h-14 text-center mt-5">C</p>
+                <p class="w-24 h-14 text-center mt-5">D</p>
+                <p class="w-24 h-14 text-center mt-6">E</p>
+                <p class="w-24 h-14 text-center mt-6">F</p>
+                <p class="w-24 h-14 text-center mt-7">G</p>
+                <p class="w-24 h-14 text-center mt-7">H</p>
+                <p class="w-24 h-14 text-center mt-7">I</p>
+                <p class="w-24 h-14 text-center mt-7">J</p>
+              </div>
+              <div class="grid grid-cols-4 gap-4">
+                <button class="btn sit w-24 h-14">A1</button>
+                <button class="btn sit w-24 h-14">A2</button>
+                <button class="btn sit w-24 h-14">A3</button>
+                <button class="btn sit w-24 h-14">A4</button>
+                <button class="btn sit w-24 h-14">B1</button>
+                <button class="btn sit w-24 h-14">B2</button>
+                <button class="btn sit w-24 h-14">B3</button>
+                <button class="btn sit w-24 h-14">B4</button>
+                <button class="btn sit w-24 h-14">C1</button>
+                <button class="btn sit w-24 h-14">C2</button>
+                <button class="btn sit w-24 h-14">C3</button>
+                <button class="btn sit w-24 h-14">C4</button>
+                <button class="btn sit w-24 h-14">D1</button>
+                <button class="btn sit w-24 h-14">D2</button>
+                <button class="btn sit w-24 h-14">D3</button>
+                <button class="btn sit w-24 h-14">D4</button>
+                <button class="btn sit w-24 h-14">E1</button>
+                <button class="btn sit w-24 h-14">E2</button>
+                <button class="btn sit w-24 h-14">E3</button>
+                <button class="btn sit w-24 h-14">E4</button>
+                <button class="btn sit w-24 h-14">F1</button>
+                <button class="btn sit w-24 h-14">F2</button>
+                <button class="btn sit w-24 h-14">F3</button>
+                <button class="btn sit w-24 h-14">F4</button>
+                <button class="btn sit w-24 h-14">G1</button>
+                <button class="btn sit w-24 h-14">G2</button>
+                <button class="btn sit w-24 h-14">G3</button>
+                <button class="btn sit w-24 h-14">G4</button>
+                <button class="btn sit w-24 h-14">H1</button>
+                <button class="btn sit w-24 h-14">H2</button>
+                <button class="btn sit w-24 h-14">H3</button>
+                <button class="btn sit w-24 h-14">H4</button>
+                <button class="btn sit w-24 h-14">I1</button>
+                <button class="btn sit w-24 h-14">I2</button>
+                <button class="btn sit w-24 h-14">I3</button>
+                <button class="btn sit w-24 h-14">I4</button>
+                <button class="btn sit w-24 h-14">J1</button>
+                <button class="btn sit w-24 h-14">J2</button>
+                <button class="btn sit w-24 h-14">J3</button>
+                <button class="btn sit w-24 h-14">J4</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Select Your Seat -->
+          <div class="w-5/12 px-4">
+            <h1 class="text-[#030712] font-bold text-[24px]">Select Your Seat</h1>
+            <hr class="border-dashed my-2">
+            <div class="bg-slate-100 rounded-3xl p-3">
+              <div class="flex justify-between">
+                <p>Seat<span id="seatCount" class="ml-1 w-4 bg-green-500 text-[#fff] px-3 rounded-md">o</span></p>
+                <p>Class</p>
+                <p>Price</p>
+              </div>
+              <hr class="border-dashed my-2">
+              <!-- container div -->
+              <div id="container" class="grid grid-cols-3 gap-5">
+              </div>
+              <hr class=" my-2">
+              <div class="flex justify-between">
+                <p>Total Price</p>
+                <p>BDT <span id="totalPrice">0</span></p>
+              </div>
+              <div id="remove" class="bg-slate-400  flex justify-between rounded-3xl">
+                <input id="inputF" type="text" placeholder="Have any copupon?">
+                <button id="applyBTN" class="btn bg-[#1DD100] outline-none text-[#fff]">Apply</button>
+              </div>
+              <div class="flex justify-between">
+                <p>Grand Total</p>
+                <p>BDT <span id="grandTotal">0</span></p>
+              </div>
+              <!-- Passenger Name* Phone Number* Email ID-->
+              <div>
+
+                    <!-- Passenger Name* Phone Number* Email ID-->
+                      <form class="card-body">
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Passenger Name*</span>
+                          </label>
+                          <input type="text" placeholder="Enter your name" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Phone Number*</span>
+                          </label>
+                          <input type="number" placeholder="Enter your phone number" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Email ID</span>
+                          </label>
+                          <input type="email" placeholder="Enter your email id" class="input input-bordered" required />
+                          <label class="label">
+                          </label>
+                        </div>
+                        <div class="form-control mt-6">
+                          <button class="btn btn-primary bg-[#1DD100] outline-none border-none">Next</button>
+                        </div>
+                      </form>
+
+                  </div>
+                  <div class="flex justify-around decoration-black">
+                    <p>Terms and Conditions</p>
+                    <p>Cancellation Policy</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    <hr class="border-dashed">
+    
+    
+   
+
+
+
+
+
+  </main>
+
+  <!-- Footer_section -->
+
+ <footer class="bg-[#131318] text-[#fff] px-10 lg:px-20 py-16 lg:flex gap-x-10 justify-between mt-20">
+  
+  <div class="s_1 pb-10">
+    <h3 class="text-3xl font-extrabold pb-5">Get In Touch</h3>
+    <p class="text-[#adacac] pb-5">Contact if you want to buy sports items</p>
+
+    <div class="flex items-center pb-5">
+      <i class="fa-regular fa-envelope text-[#FF4240] "> </i>
+      <p class="text-[#b6b5b5] ml-4 text-xl">Travel-Ticket@support.com</p>
+    </div>
+    <ul class="">
+      <li><a href=""><i class="fa-solid fa-phone text-[#FF4240] flex"> <p class="text-[#a9a8a8] ml-4">(+62) 123-321-543</p></i>
+</a></li>
+    </ul>
+  </div>
+
+  <div class="s_4 pb-10">
+    <h3 class="text-2xl font-bold pb-5">Services</h3>
+    <p class="text-[#adacac] pb-5">Travel any space in Bangladesh</p>
+    <p class="text-[#adacac] pb-5">Reserved</p>
+    <p class="text-[#adacac] pb-5">Private Lesson</p>
+    <p class="text-[#adacac] pb-5">Education tour</p>
+  </div>
+
+  
+ </footer>
+
+
+
+<script src="index.js"></script>
+</body>
+
+</html>
+
