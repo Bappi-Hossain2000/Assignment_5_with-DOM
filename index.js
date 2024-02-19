@@ -73,13 +73,37 @@ btnLast.addEventListener("click", function(){
   const couponCode = document.getElementById("inputF").value;
   if(couponCode === "NEW15"){
     grandTotal.innerText = totalPriceSum * parseFloat(.85);
-    // document.getElementById("remove").remove;
-    // console.log(grandTotalC)
+    // Update
+    const inputD = document.getElementById("remove")
+    const inputD1 = document.getElementById("disable")
+    inputD1.appendChild(inputD)
+    
+    
+    console.log(inputD1)
   } else if(couponCode === "Couple 20"){
     grandTotal.innerText = totalPriceSum * parseFloat(.80);
+    
+    // Update
+    const inputD = document.getElementById("remove")
+    const inputD1 = document.getElementById("disable")
+    inputD1.appendChild(inputD)
+  }else{
+    // Update
+    alert("Invalid couponCode")
   }
-
-
 })
 
 
+// update update update
+const next = document.getElementById("next")
+// console.log(next);
+next.addEventListener("click", function(){
+  const popup = document.getElementById("popup")
+  // console.log(popup);
+  const display = document.getElementById("display")
+  display.appendChild(popup)
+  console.log(display);
+
+  // console.log(popup);
+
+})
