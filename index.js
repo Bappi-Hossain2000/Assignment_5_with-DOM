@@ -5,19 +5,29 @@ seatCountSumD = 0;
 
 
 for(const site of cards){
-  // Select Your Seat
+  // console.log(site);
+  
   site.addEventListener("click", function(){
     
     const bgColor = site.style.backgroundColor = '#1DD100';
     const siteName = site.innerHTML;
     const economoy = "Economoy";
-
+    
     // seatCountSum
     const seatCount = parseFloat(1);
     seatCountSum += seatCount;
     const totalC = document.getElementById('seatCount');
     totalC.innerText = seatCountSum;
-    // console.log(seatCountSum);
+    console.log(seatCountSum);
+
+    // disable button
+    if(seatCountSum < 5 ){
+    } else if ( seatCountSum == 4 ){
+      const cards = document.querySelectorAll('.sit').disabled;
+    }else{
+      alert ("Beware of the black market")
+
+    }
     
 
     // seatCountSumD
