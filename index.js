@@ -18,7 +18,6 @@ for(const site of cards){
     seatCountSum += seatCount;
     const totalC = document.getElementById('seatCount');
     totalC.innerText = seatCountSum;
-    console.log(seatCountSum);
 
     // disable button
     if(seatCountSum < 5 ){
@@ -72,46 +71,59 @@ for(const site of cards){
     titleContainerC.appendChild(Price)
     // console.log(Price);
 
-    
+
+
+    // console.log(seatCountSum);
+
+
+// next btn next btn next btn next btn next btn next btn next btn next btn next btn
+    const next = document.getElementById("next").disabled;
+    if(seatCountSum > 0){
+      const next = document.getElementById("next");
+      next.addEventListener("click", function(){
+        const popup = document.getElementById("popup")
+        // console.log(popup);
+        const display = document.getElementById("display")
+        display.appendChild(popup)
+        // console.log(display);
+      })
+    }
+
+
+
+
+
+    // applyBTN applyBTN applyBTN applyBTN applyBTN applyBTN applyBTN
+
+    const btnLast = document.getElementById("applyBTN")
+    if(seatCountSum>3){
+      // console.log(btnLast)
+      btnLast.addEventListener("click", function(){
+        // console.log("btnLast")
+        const couponCode = document.getElementById("inputF").value;
+        if(couponCode === "NEW15"){
+          grandTotal.innerText = totalPriceSum * parseFloat(.85);
+          // Update
+          const inputD = document.getElementById("remove")
+          const inputD1 = document.getElementById("disable")
+          inputD1.appendChild(inputD)
+          
+          
+          // console.log(inputD1)
+        } else if(couponCode === "Couple 20"){
+          grandTotal.innerText = totalPriceSum * parseFloat(.80);
+          
+          // Update
+          const inputD = document.getElementById("remove")
+          const inputD1 = document.getElementById("disable")
+          inputD1.appendChild(inputD)
+        }else{
+          // Update
+          alert("Invalid couponCode")
+        }
+      })
+    }
+
+
   })
 }
-
-const btnLast = document.getElementById("applyBTN")
-// console.log(btnLast)
-btnLast.addEventListener("click", function(){
-  // console.log("btnLast")
-  const couponCode = document.getElementById("inputF").value;
-  if(couponCode === "NEW15"){
-    grandTotal.innerText = totalPriceSum * parseFloat(.85);
-    // Update
-    const inputD = document.getElementById("remove")
-    const inputD1 = document.getElementById("disable")
-    inputD1.appendChild(inputD)
-    
-    
-    console.log(inputD1)
-  } else if(couponCode === "Couple 20"){
-    grandTotal.innerText = totalPriceSum * parseFloat(.80);
-    
-    // Update
-    const inputD = document.getElementById("remove")
-    const inputD1 = document.getElementById("disable")
-    inputD1.appendChild(inputD)
-  }else{
-    // Update
-    alert("Invalid couponCode")
-  }
-})
-
-
-// update update update
-const next = document.getElementById("next")
-// console.log(next);
-next.addEventListener("click", function(){
-  const popup = document.getElementById("popup")
-  // console.log(popup);
-  const display = document.getElementById("display")
-  display.appendChild(popup)
-  console.log(display);
-
-})
